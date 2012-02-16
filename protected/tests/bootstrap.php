@@ -1,7 +1,7 @@
 <?php
 
 // change the following paths if necessary
-$yiit=dirname(__FILE__).'/../../../ten-guitars/protected/library/yii/yiit.php';
+$yiit=dirname(__FILE__).'/../library/yii/yiit.php';
 $config=dirname(__FILE__).'/../config/test.php';
 
 require_once($yiit);
