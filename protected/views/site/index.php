@@ -11,6 +11,16 @@ foreach ($posts as $post) {
 }
 ?>
 
+
+
+
+<hr>
+
+
+
+
+
+
 <h3>Your post</h3>
 <?php
 $form = $this->beginWidget(

@@ -8,8 +8,9 @@ class m120216_091605_setup extends CDbMigration
         $this->createTable(
             'post',
             array(
-                'title' => 'string',
-                'body' => 'text',
+                'id'         => 'pk',
+                'title'      => 'string',
+                'body'       => 'text',
                 'created_at' => 'date',
             )
         );
@@ -18,9 +19,11 @@ class m120216_091605_setup extends CDbMigration
         $this->createTable(
             'comment',
             array(
-                'name' => 'string',
-                'email' => 'string',
-                'comment' => 'text',
+                'id'         => 'pk',
+                'post_id'    => 'int',
+                'name'       => 'string',
+                'email'      => 'string',
+                'comment'    => 'text',
                 'created_at' => 'date',
             )
         );

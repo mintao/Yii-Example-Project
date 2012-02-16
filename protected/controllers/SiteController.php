@@ -15,9 +15,9 @@ class SiteController extends Controller
     // Index
     public function actionIndex()
     {
-        $post  = Yii::app()->getRequest()->getPost('Post');
-        $posts = Post::model()->findAll();
         $model = new Post;
+        $post  = Yii::app()->getRequest()->getPost('Post');
+        $posts = Post::model()->with('comments')->recent()->findAll();
 
         if ($post) {
             $model->attributes = $post;

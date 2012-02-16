@@ -38,9 +38,10 @@ class Comment extends CActiveRecord
 		return array(
 			array('name, email', 'length', 'max'=>255),
 			array('comment, created_at', 'safe'),
+            array('post_id', 'exist', 'className' => 'Post', 'attributeName' => 'id'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('name, email, comment, created_at', 'safe', 'on'=>'search'),
+			array('post_id, name, email, comment, created_at', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -49,9 +50,8 @@ class Comment extends CActiveRecord
 	 */
 	public function relations()
 	{
-		// NOTE: you may need to adjust the relation name and the related
-		// class name for the relations automatically generated below.
 		return array(
+            'post' => array(self::BELONGS_TO, 'Post', 'id'),
 		);
 	}
 
@@ -61,9 +61,9 @@ class Comment extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'name' => 'Name',
-			'email' => 'Email',
-			'comment' => 'Comment',
+			'name'       => 'Name',
+			'email'      => 'Email',
+			'comment'    => 'Comment',
 			'created_at' => 'Created At',
 		);
 	}
@@ -88,4 +88,14 @@ class Comment extends CActiveRecord
 			'criteria'=>$criteria,
 		));
 	}
+
+    public function behaviors()
+    {
+        return array(
+            'Timestamp' => array(
+                'class' => 'application.components.TimestampBehavior',
+                'createColumnName' => 'created_at',
+            )
+        );
+    }
 }

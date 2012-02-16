@@ -4,6 +4,7 @@
  * This is the model class for table "post".
  *
  * The followings are the available columns in table 'post':
+ * @property integer $id
  * @property string $title
  * @property string $body
  * @property string $created_at
@@ -52,6 +53,7 @@ class Post extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+            'comments' => array(self::HAS_MANY, 'Comment', 'post_id'),
 		);
 	}
 
@@ -61,8 +63,8 @@ class Post extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'title' => 'Title',
-			'body' => 'Your blog post',
+			'title'      => 'Title',
+			'body'       => 'Your blog post',
 			'created_at' => 'Created At',
 		);
 	}
@@ -78,6 +80,7 @@ class Post extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
+		$criteria->compare('id',$this->id,true);
 		$criteria->compare('title',$this->title,true);
 		$criteria->compare('body',$this->body,true);
 		$criteria->compare('created_at',$this->created_at,true);
@@ -86,4 +89,24 @@ class Post extends CActiveRecord
 			'criteria'=>$criteria,
 		));
 	}
+
+    public function behaviors()
+    {
+        return array(
+            'Timestamp' => array(
+                'class' => 'application.components.TimestampBehavior',
+                'createColumnName' => 'created_at',
+            )
+        );
+    }
+
+    public function scopes()
+    {
+        return array(
+            'recent' => array(
+                'order' => 'created_at DESC',
+                'limit' => 5,
+            )
+        );
+    }
 }
