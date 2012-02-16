@@ -1,0 +1,27 @@
+2012/02/16 12:45:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bootstrap-responsive.css".' in /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php(135): CWebApplication->runController('bootstrap-respo...')
+#1 /usr/share/nginx/www/mayflowerexample/protected/library/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /usr/share/nginx/www/mayflowerexample/public/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap-responsive.css
+HTTP_REFERER=http://mayflowerexample.local/
+---
+2012/02/16 12:45:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bootstrap-responsive.css".' in /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php(135): CWebApplication->runController('bootstrap-respo...')
+#1 /usr/share/nginx/www/mayflowerexample/protected/library/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /usr/share/nginx/www/mayflowerexample/public/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap-responsive.css
+HTTP_REFERER=http://mayflowerexample.local/
+---
+2012/02/16 12:46:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bootstrap-responsive.css".' in /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php(135): CWebApplication->runController('bootstrap-respo...')
+#1 /usr/share/nginx/www/mayflowerexample/protected/library/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /usr/share/nginx/www/mayflowerexample/public/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap-responsive.css
+HTTP_REFERER=http://mayflowerexample.local/
+---
