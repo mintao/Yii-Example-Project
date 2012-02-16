@@ -49,7 +49,10 @@ class SiteController extends Controller
         if ($post) {
             $form->attributes = $post;
             if ($form->validate()) {
-
+                Yii::app()->user->setFlash(
+                    'success',
+                    'We will send out an email ... NOT'
+                );
             }
         }
 

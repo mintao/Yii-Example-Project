@@ -45,8 +45,19 @@ Yii::app()->clientScript
   </head>
 
   <body>
-    <?php echo $this->renderPartial('//layouts/_topnav') ?>
+    <?php  echo $this->renderPartial('//layouts/_topnav') ?>
     <div class="container">
+        <?php if (! empty($this->breadcrumbs)) : ?>
+            <div class="breadcrumb">
+            <?php $this->widget(
+                'zii.widgets.CBreadcrumbs',
+                array(
+                    'links' => $this->breadcrumbs
+                )
+            ); ?>
+            </div>
+        <?php endif ?>
+        <?php echo $this->renderPartial('//layouts/_infobar') ?>
         <?php echo $content ?>
     </div>
   </body>

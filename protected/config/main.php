@@ -66,6 +66,9 @@ return array(
 
 	'params'=>array(
 		'adminEmail'=>'webmaster@example.com',
+        'infobarLevels' => array(
+            'error', 'success', 'info', 'warn'
+        ),
 	),
 
 );

@@ -2,16 +2,16 @@
 
 <h1>Welcome to <i><?php echo CHtml::encode(Yii::app()->name); ?></i></h1>
 
-<p>Congratulations! You have successfully created your Yii application.</p>
+<p>This is a blog demonstration</p>
 
-<h2>Previous posts</h2>
+<h3>Previous posts</h3>
 <?php
 foreach ($posts as $post) {
     $this->renderPartial('_post', array('post' => $post));
 }
 ?>
 
-<h2>Your post</h2>
+<h3>Your post</h3>
 <?php
 $form = $this->beginWidget(
     'CActiveForm',
