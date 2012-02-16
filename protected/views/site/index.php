@@ -4,13 +4,55 @@
 
 <p>Congratulations! You have successfully created your Yii application.</p>
 
-<p>You may change the content of this page by modifying the following two files:</p>
-<ul>
-	<li>View file: <tt><?php echo __FILE__; ?></tt></li>
-	<li>Layout file: <tt><?php echo $this->getLayoutFile('main'); ?></tt></li>
-</ul>
+<h2>Previous posts</h2>
+<?php
+foreach ($posts as $post) {
+    $this->renderPartial('_post', array('post' => $post));
+}
+?>
 
-<p>For more details on how to further develop this application, please read
-the <a href="http://www.yiiframework.com/doc/">documentation</a>.
-Feel free to ask in the <a href="http://www.yiiframework.com/forum/">forum</a>,
-should you have any questions.</p>
+<h2>Your post</h2>
+<?php
+$form = $this->beginWidget(
+    'CActiveForm',
+    array(
+        'htmlOptions' => array(
+            'class' => 'well',
+        ),
+        'errorMessageCssClass' => 'error',
+    )
+);
+?>
+
+<?php echo $form->errorSummary($model) ?>
+
+<div>
+    <?php
+    echo $form->labelEx($model, 'title');
+    echo $form->textField($model, 'title');
+    ?>
+</div>
+
+<div>
+    <?php
+    echo $form->labelEx($model, 'body');
+    echo $form->textArea($model, 'body');
+    ?>
+</div>
+
+<div>
+    <?php
+    echo CHtml::resetButton(
+        'Cancel',
+        array('class' => 'btn')
+    );
+    ?>
+    <?php
+    echo CHtml::submitButton(
+        'Save your post',
+        array('class' => 'btn btn-primary')
+    );
+    ?>
+</div>
+
+<?php $this->endWidget() ?>

@@ -904,3 +904,403 @@ Stack trace:
 #1 /usr/share/nginx/www/mayflowerexample/protected/library/yii/base/CApplication.php(162): CWebApplication->processRequest()
 #2 /usr/share/nginx/www/mayflowerexample/public/index.php(14): CApplication->run()
 #3 {main} REQUEST_URI=/bootstrap-responsive.css
+2012/02/16 10:39:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bootstrap-responsive.css".' in /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php(135): CWebApplication->runController('bootstrap-respo...')
+#1 /usr/share/nginx/www/mayflowerexample/protected/library/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /usr/share/nginx/www/mayflowerexample/public/index.php(14): CApplication->run()
+#3 {main} REQUEST_URI=/bootstrap-responsive.css
+2012/02/16 10:40:18 [error] [exception.CException] exception 'CException' with message 'CForm and its behaviors do not have a method or closure named "init".' in /usr/share/nginx/www/mayflowerexample/protected/library/yii/base/CComponent.php:269
+Stack trace:
+#0 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CBaseController.php(148): CComponent->__call('init', Array)
+#1 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CBaseController.php(148): CForm->init()
+#2 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CBaseController.php(173): CBaseController->createWidget('CForm', Array)
+#3 /usr/share/nginx/www/mayflowerexample/protected/views/site/index.php(10): CBaseController->widget('CForm')
+#4 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CBaseController.php(127): require('/usr/share/ngin...')
+#5 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CBaseController.php(96): CBaseController->renderInternal('/usr/share/ngin...', Array, true)
+#6 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CController.php(878): CBaseController->renderFile('/usr/share/ngin...', Array, true)
+#7 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CController.php(791): CController->renderPartial('index', Array, true)
+#8 /usr/share/nginx/www/mayflowerexample/protected/controllers/SiteController.php(19): CController->render('index', Array)
+#9 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#10 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CController.php(312): CInlineAction->runWithParams(Array)
+#11 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CController.php(290): CController->runAction(Object(CInlineAction))
+#12 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CController.php(269): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php(276): CController->run('index')
+#14 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php(135): CWebApplication->runController('site/index')
+#15 /usr/share/nginx/www/mayflowerexample/protected/library/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /usr/share/nginx/www/mayflowerexample/public/index.php(14): CApplication->run()
+#17 {main} REQUEST_URI=/
+2012/02/16 10:40:31 [error] [exception.CException] exception 'CException' with message 'CForm and its behaviors do not have a method or closure named "init".' in /usr/share/nginx/www/mayflowerexample/protected/library/yii/base/CComponent.php:269
+Stack trace:
+#0 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CBaseController.php(148): CComponent->__call('init', Array)
+#1 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CBaseController.php(148): CForm->init()
+#2 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CBaseController.php(173): CBaseController->createWidget('CForm', Array)
+#3 /usr/share/nginx/www/mayflowerexample/protected/views/site/index.php(10): CBaseController->widget('CForm')
+#4 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CBaseController.php(127): require('/usr/share/ngin...')
+#5 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CBaseController.php(96): CBaseController->renderInternal('/usr/share/ngin...', Array, true)
+#6 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CController.php(878): CBaseController->renderFile('/usr/share/ngin...', Array, true)
+#7 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CController.php(791): CController->renderPartial('index', Array, true)
+#8 /usr/share/nginx/www/mayflowerexample/protected/controllers/SiteController.php(19): CController->render('index', Array)
+#9 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#10 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CController.php(312): CInlineAction->runWithParams(Array)
+#11 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CController.php(290): CController->runAction(Object(CInlineAction))
+#12 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CController.php(269): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php(276): CController->run('index')
+#14 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php(135): CWebApplication->runController('site/index')
+#15 /usr/share/nginx/www/mayflowerexample/protected/library/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /usr/share/nginx/www/mayflowerexample/public/index.php(14): CApplication->run()
+#17 {main} REQUEST_URI=/
+2012/02/16 10:40:41 [error] [php] Object of class CActiveForm could not be converted to string (/usr/share/nginx/www/mayflowerexample/protected/views/site/index.php:10)
+Stack trace:
+#0 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CController.php(878): SiteController->renderFile()
+#1 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CController.php(791): SiteController->renderPartial()
+#2 /usr/share/nginx/www/mayflowerexample/protected/controllers/SiteController.php(19): SiteController->render()
+#3 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#4 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CController.php(312): CInlineAction->runWithParams()
+#5 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CController.php(290): SiteController->runAction()
+#6 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CController.php(269): SiteController->runActionWithFilters()
+#7 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php(276): SiteController->run()
+#8 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php(135): CWebApplication->runController()
+#9 /usr/share/nginx/www/mayflowerexample/protected/library/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /usr/share/nginx/www/mayflowerexample/public/index.php(14): CWebApplication->run()
+REQUEST_URI=/
+in /usr/share/nginx/www/mayflowerexample/protected/views/site/index.php (10)
+in /usr/share/nginx/www/mayflowerexample/protected/controllers/SiteController.php (19)
+in /usr/share/nginx/www/mayflowerexample/public/index.php (14)
+2012/02/16 10:40:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bootstrap-responsive.css".' in /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php(135): CWebApplication->runController('bootstrap-respo...')
+#1 /usr/share/nginx/www/mayflowerexample/protected/library/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /usr/share/nginx/www/mayflowerexample/public/index.php(14): CApplication->run()
+#3 {main} REQUEST_URI=/bootstrap-responsive.css
+2012/02/16 10:43:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bootstrap-responsive.css".' in /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php(135): CWebApplication->runController('bootstrap-respo...')
+#1 /usr/share/nginx/www/mayflowerexample/protected/library/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /usr/share/nginx/www/mayflowerexample/public/index.php(14): CApplication->run()
+#3 {main} REQUEST_URI=/bootstrap-responsive.css
+2012/02/16 10:43:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bootstrap-responsive.css".' in /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php(135): CWebApplication->runController('bootstrap-respo...')
+#1 /usr/share/nginx/www/mayflowerexample/protected/library/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /usr/share/nginx/www/mayflowerexample/public/index.php(14): CApplication->run()
+#3 {main} REQUEST_URI=/bootstrap-responsive.css
+2012/02/16 10:43:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bootstrap-responsive.css".' in /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php(135): CWebApplication->runController('bootstrap-respo...')
+#1 /usr/share/nginx/www/mayflowerexample/protected/library/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /usr/share/nginx/www/mayflowerexample/public/index.php(14): CApplication->run()
+#3 {main} REQUEST_URI=/bootstrap-responsive.css
+2012/02/16 10:45:37 [error] [php] Undefined variable: form (/usr/share/nginx/www/mayflowerexample/protected/views/site/index.php:19)
+Stack trace:
+#0 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CController.php(878): SiteController->renderFile()
+#1 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CController.php(791): SiteController->renderPartial()
+#2 /usr/share/nginx/www/mayflowerexample/protected/controllers/SiteController.php(27): SiteController->render()
+#3 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#4 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CController.php(312): CInlineAction->runWithParams()
+#5 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CController.php(290): SiteController->runAction()
+#6 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CController.php(269): SiteController->runActionWithFilters()
+#7 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php(276): SiteController->run()
+#8 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php(135): CWebApplication->runController()
+#9 /usr/share/nginx/www/mayflowerexample/protected/library/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /usr/share/nginx/www/mayflowerexample/public/index.php(14): CWebApplication->run()
+REQUEST_URI=/
+in /usr/share/nginx/www/mayflowerexample/protected/views/site/index.php (19)
+in /usr/share/nginx/www/mayflowerexample/protected/controllers/SiteController.php (27)
+in /usr/share/nginx/www/mayflowerexample/public/index.php (14)
+2012/02/16 10:45:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bootstrap-responsive.css".' in /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php(135): CWebApplication->runController('bootstrap-respo...')
+#1 /usr/share/nginx/www/mayflowerexample/protected/library/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /usr/share/nginx/www/mayflowerexample/public/index.php(14): CApplication->run()
+#3 {main} REQUEST_URI=/bootstrap-responsive.css
+2012/02/16 10:47:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bootstrap-responsive.css".' in /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php(135): CWebApplication->runController('bootstrap-respo...')
+#1 /usr/share/nginx/www/mayflowerexample/protected/library/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /usr/share/nginx/www/mayflowerexample/public/index.php(14): CApplication->run()
+#3 {main} REQUEST_URI=/bootstrap-responsive.css
+2012/02/16 10:48:29 [error] [exception.CException] exception 'CException' with message 'Property "CActiveForm.class" is not defined.' in /usr/share/nginx/www/mayflowerexample/protected/library/yii/base/CComponent.php:174
+Stack trace:
+#0 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWidgetFactory.php(162): CComponent->__set('class', 'well')
+#1 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CBaseController.php(147): CWidgetFactory->createWidget(Object(SiteController), 'CActiveForm', Array)
+#2 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CBaseController.php(173): CBaseController->createWidget('CActiveForm', Array)
+#3 /usr/share/nginx/www/mayflowerexample/protected/views/site/index.php(15): CBaseController->widget('CActiveForm', Array)
+#4 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CBaseController.php(127): require('/usr/share/ngin...')
+#5 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CBaseController.php(96): CBaseController->renderInternal('/usr/share/ngin...', Array, true)
+#6 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CController.php(878): CBaseController->renderFile('/usr/share/ngin...', Array, true)
+#7 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CController.php(791): CController->renderPartial('index', Array, true)
+#8 /usr/share/nginx/www/mayflowerexample/protected/controllers/SiteController.php(27): CController->render('index', Array)
+#9 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#10 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CController.php(312): CInlineAction->runWithParams(Array)
+#11 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CController.php(290): CController->runAction(Object(CInlineAction))
+#12 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CController.php(269): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php(276): CController->run('index')
+#14 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php(135): CWebApplication->runController('site/index')
+#15 /usr/share/nginx/www/mayflowerexample/protected/library/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /usr/share/nginx/www/mayflowerexample/public/index.php(14): CApplication->run()
+#17 {main} REQUEST_URI=/
+2012/02/16 10:49:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bootstrap-responsive.css".' in /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php(135): CWebApplication->runController('bootstrap-respo...')
+#1 /usr/share/nginx/www/mayflowerexample/protected/library/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /usr/share/nginx/www/mayflowerexample/public/index.php(14): CApplication->run()
+#3 {main} REQUEST_URI=/bootstrap-responsive.css
+2012/02/16 10:51:09 [error] [exception.CException] exception 'CException' with message 'SiteController contains improperly nested widget tags in its view "/usr/share/nginx/www/mayflowerexample/protected/views/site/index.php". A CActiveForm widget does not have an endWidget() call.' in /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CBaseController.php:102
+Stack trace:
+#0 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CController.php(878): CBaseController->renderFile('/usr/share/ngin...', Array, true)
+#1 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CController.php(791): CController->renderPartial('index', Array, true)
+#2 /usr/share/nginx/www/mayflowerexample/protected/controllers/SiteController.php(27): CController->render('index', Array)
+#3 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#4 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CController.php(312): CInlineAction->runWithParams(Array)
+#5 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CController.php(290): CController->runAction(Object(CInlineAction))
+#6 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CController.php(269): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php(276): CController->run('index')
+#8 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php(135): CWebApplication->runController('site/index')
+#9 /usr/share/nginx/www/mayflowerexample/protected/library/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /usr/share/nginx/www/mayflowerexample/public/index.php(14): CApplication->run()
+#11 {main} REQUEST_URI=/
+2012/02/16 10:51:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bootstrap-responsive.css".' in /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php(135): CWebApplication->runController('bootstrap-respo...')
+#1 /usr/share/nginx/www/mayflowerexample/protected/library/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /usr/share/nginx/www/mayflowerexample/public/index.php(14): CApplication->run()
+#3 {main} REQUEST_URI=/bootstrap-responsive.css
+2012/02/16 10:51:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bootstrap-responsive.css".' in /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php(135): CWebApplication->runController('bootstrap-respo...')
+#1 /usr/share/nginx/www/mayflowerexample/protected/library/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /usr/share/nginx/www/mayflowerexample/public/index.php(14): CApplication->run()
+#3 {main} REQUEST_URI=/bootstrap-responsive.css
+2012/02/16 10:52:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bootstrap-responsive.css".' in /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php(135): CWebApplication->runController('bootstrap-respo...')
+#1 /usr/share/nginx/www/mayflowerexample/protected/library/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /usr/share/nginx/www/mayflowerexample/public/index.php(14): CApplication->run()
+#3 {main} REQUEST_URI=/bootstrap-responsive.css
+2012/02/16 10:52:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bootstrap-responsive.css".' in /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php(135): CWebApplication->runController('bootstrap-respo...')
+#1 /usr/share/nginx/www/mayflowerexample/protected/library/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /usr/share/nginx/www/mayflowerexample/public/index.php(14): CApplication->run()
+#3 {main} REQUEST_URI=/bootstrap-responsive.css
+2012/02/16 10:53:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bootstrap-responsive.css".' in /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php(135): CWebApplication->runController('bootstrap-respo...')
+#1 /usr/share/nginx/www/mayflowerexample/protected/library/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /usr/share/nginx/www/mayflowerexample/public/index.php(14): CApplication->run()
+#3 {main} REQUEST_URI=/bootstrap-responsive.css
+2012/02/16 10:53:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bootstrap-responsive.css".' in /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php(135): CWebApplication->runController('bootstrap-respo...')
+#1 /usr/share/nginx/www/mayflowerexample/protected/library/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /usr/share/nginx/www/mayflowerexample/public/index.php(14): CApplication->run()
+#3 {main} REQUEST_URI=/bootstrap-responsive.css
+2012/02/16 10:53:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bootstrap-responsive.css".' in /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php(135): CWebApplication->runController('bootstrap-respo...')
+#1 /usr/share/nginx/www/mayflowerexample/protected/library/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /usr/share/nginx/www/mayflowerexample/public/index.php(14): CApplication->run()
+#3 {main} REQUEST_URI=/bootstrap-responsive.css
+2012/02/16 10:53:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bootstrap-responsive.css".' in /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php(135): CWebApplication->runController('bootstrap-respo...')
+#1 /usr/share/nginx/www/mayflowerexample/protected/library/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /usr/share/nginx/www/mayflowerexample/public/index.php(14): CApplication->run()
+#3 {main} REQUEST_URI=/bootstrap-responsive.css
+2012/02/16 10:54:02 [error] [php] Undefined variable: post (/usr/share/nginx/www/mayflowerexample/protected/controllers/SiteController.php:21)
+Stack trace:
+#0 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CController.php(290): SiteController->runAction()
+#1 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CController.php(269): SiteController->runActionWithFilters()
+#2 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php(276): SiteController->run()
+#3 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php(135): CWebApplication->runController()
+#4 /usr/share/nginx/www/mayflowerexample/protected/library/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /usr/share/nginx/www/mayflowerexample/public/index.php(14): CWebApplication->run()
+REQUEST_URI=/
+in /usr/share/nginx/www/mayflowerexample/protected/controllers/SiteController.php (21)
+in /usr/share/nginx/www/mayflowerexample/public/index.php (14)
+2012/02/16 10:54:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bootstrap-responsive.css".' in /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php(135): CWebApplication->runController('bootstrap-respo...')
+#1 /usr/share/nginx/www/mayflowerexample/protected/library/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /usr/share/nginx/www/mayflowerexample/public/index.php(14): CApplication->run()
+#3 {main} REQUEST_URI=/bootstrap-responsive.css
+2012/02/16 10:54:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bootstrap-responsive.css".' in /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php(135): CWebApplication->runController('bootstrap-respo...')
+#1 /usr/share/nginx/www/mayflowerexample/protected/library/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /usr/share/nginx/www/mayflowerexample/public/index.php(14): CApplication->run()
+#3 {main} REQUEST_URI=/bootstrap-responsive.css
+2012/02/16 10:55:05 [error] [exception.CException] exception 'CException' with message 'Property "CActiveForm.errorSummary" is not defined.' in /usr/share/nginx/www/mayflowerexample/protected/library/yii/base/CComponent.php:131
+Stack trace:
+#0 /usr/share/nginx/www/mayflowerexample/protected/views/site/index.php(26): CComponent->__get('errorSummary')
+#1 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CBaseController.php(127): require('/usr/share/ngin...')
+#2 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CBaseController.php(96): CBaseController->renderInternal('/usr/share/ngin...', Array, true)
+#3 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CController.php(878): CBaseController->renderFile('/usr/share/ngin...', Array, true)
+#4 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CController.php(791): CController->renderPartial('index', Array, true)
+#5 /usr/share/nginx/www/mayflowerexample/protected/controllers/SiteController.php(35): CController->render('index', Array)
+#6 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#7 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CController.php(312): CInlineAction->runWithParams(Array)
+#8 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CController.php(290): CController->runAction(Object(CInlineAction))
+#9 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CController.php(269): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php(276): CController->run('index')
+#11 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php(135): CWebApplication->runController('site/index')
+#12 /usr/share/nginx/www/mayflowerexample/protected/library/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /usr/share/nginx/www/mayflowerexample/public/index.php(14): CApplication->run()
+#14 {main} REQUEST_URI=/
+2012/02/16 10:55:12 [error] [php] Missing argument 1 for CActiveForm::errorSummary(), called in /usr/share/nginx/www/mayflowerexample/protected/views/site/index.php on line 26 and defined (/usr/share/nginx/www/mayflowerexample/protected/library/yii/web/widgets/CActiveForm.php:504)
+Stack trace:
+#0 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CBaseController.php(96): SiteController->renderInternal()
+#1 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CController.php(878): SiteController->renderFile()
+#2 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CController.php(791): SiteController->renderPartial()
+#3 /usr/share/nginx/www/mayflowerexample/protected/controllers/SiteController.php(35): SiteController->render()
+#4 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#5 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CController.php(312): CInlineAction->runWithParams()
+#6 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CController.php(290): SiteController->runAction()
+#7 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CController.php(269): SiteController->runActionWithFilters()
+#8 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php(276): SiteController->run()
+#9 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php(135): CWebApplication->runController()
+#10 /usr/share/nginx/www/mayflowerexample/protected/library/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /usr/share/nginx/www/mayflowerexample/public/index.php(14): CWebApplication->run()
+REQUEST_URI=/
+in /usr/share/nginx/www/mayflowerexample/protected/views/site/index.php (26)
+in /usr/share/nginx/www/mayflowerexample/protected/controllers/SiteController.php (35)
+in /usr/share/nginx/www/mayflowerexample/public/index.php (14)
+2012/02/16 10:55:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bootstrap-responsive.css".' in /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php(135): CWebApplication->runController('bootstrap-respo...')
+#1 /usr/share/nginx/www/mayflowerexample/protected/library/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /usr/share/nginx/www/mayflowerexample/public/index.php(14): CApplication->run()
+#3 {main} REQUEST_URI=/bootstrap-responsive.css
+2012/02/16 10:55:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bootstrap-responsive.css".' in /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php(135): CWebApplication->runController('bootstrap-respo...')
+#1 /usr/share/nginx/www/mayflowerexample/protected/library/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /usr/share/nginx/www/mayflowerexample/public/index.php(14): CApplication->run()
+#3 {main} REQUEST_URI=/bootstrap-responsive.css
+2012/02/16 10:55:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bootstrap-responsive.css".' in /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php(135): CWebApplication->runController('bootstrap-respo...')
+#1 /usr/share/nginx/www/mayflowerexample/protected/library/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /usr/share/nginx/www/mayflowerexample/public/index.php(14): CApplication->run()
+#3 {main} REQUEST_URI=/bootstrap-responsive.css
+2012/02/16 10:55:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bootstrap-responsive.css".' in /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php(135): CWebApplication->runController('bootstrap-respo...')
+#1 /usr/share/nginx/www/mayflowerexample/protected/library/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /usr/share/nginx/www/mayflowerexample/public/index.php(14): CApplication->run()
+#3 {main} REQUEST_URI=/bootstrap-responsive.css
+2012/02/16 10:56:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bootstrap-responsive.css".' in /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php(135): CWebApplication->runController('bootstrap-respo...')
+#1 /usr/share/nginx/www/mayflowerexample/protected/library/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /usr/share/nginx/www/mayflowerexample/public/index.php(14): CApplication->run()
+#3 {main} REQUEST_URI=/bootstrap-responsive.css
+2012/02/16 10:57:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bootstrap-responsive.css".' in /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php(135): CWebApplication->runController('bootstrap-respo...')
+#1 /usr/share/nginx/www/mayflowerexample/protected/library/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /usr/share/nginx/www/mayflowerexample/public/index.php(14): CApplication->run()
+#3 {main} REQUEST_URI=/bootstrap-responsive.css
+2012/02/16 10:57:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bootstrap-responsive.css".' in /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php(135): CWebApplication->runController('bootstrap-respo...')
+#1 /usr/share/nginx/www/mayflowerexample/protected/library/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /usr/share/nginx/www/mayflowerexample/public/index.php(14): CApplication->run()
+#3 {main} REQUEST_URI=/bootstrap-responsive.css
+2012/02/16 10:58:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bootstrap-responsive.css".' in /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php(135): CWebApplication->runController('bootstrap-respo...')
+#1 /usr/share/nginx/www/mayflowerexample/protected/library/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /usr/share/nginx/www/mayflowerexample/public/index.php(14): CApplication->run()
+#3 {main} REQUEST_URI=/bootstrap-responsive.css
+2012/02/16 10:58:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bootstrap-responsive.css".' in /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php(135): CWebApplication->runController('bootstrap-respo...')
+#1 /usr/share/nginx/www/mayflowerexample/protected/library/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /usr/share/nginx/www/mayflowerexample/public/index.php(14): CApplication->run()
+#3 {main} REQUEST_URI=/bootstrap-responsive.css
+2012/02/16 10:59:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bootstrap-responsive.css".' in /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php(135): CWebApplication->runController('bootstrap-respo...')
+#1 /usr/share/nginx/www/mayflowerexample/protected/library/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /usr/share/nginx/www/mayflowerexample/public/index.php(14): CApplication->run()
+#3 {main} REQUEST_URI=/bootstrap-responsive.css
+2012/02/16 10:59:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bootstrap-responsive.css".' in /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php(135): CWebApplication->runController('bootstrap-respo...')
+#1 /usr/share/nginx/www/mayflowerexample/protected/library/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /usr/share/nginx/www/mayflowerexample/public/index.php(14): CApplication->run()
+#3 {main} REQUEST_URI=/bootstrap-responsive.css
+2012/02/16 10:59:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bootstrap-responsive.css".' in /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php(135): CWebApplication->runController('bootstrap-respo...')
+#1 /usr/share/nginx/www/mayflowerexample/protected/library/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /usr/share/nginx/www/mayflowerexample/public/index.php(14): CApplication->run()
+#3 {main} REQUEST_URI=/bootstrap-responsive.css
+2012/02/16 10:59:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bootstrap-responsive.css".' in /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php(135): CWebApplication->runController('bootstrap-respo...')
+#1 /usr/share/nginx/www/mayflowerexample/protected/library/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /usr/share/nginx/www/mayflowerexample/public/index.php(14): CApplication->run()
+#3 {main} REQUEST_URI=/bootstrap-responsive.css
+2012/02/16 10:59:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bootstrap-responsive.css".' in /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php(135): CWebApplication->runController('bootstrap-respo...')
+#1 /usr/share/nginx/www/mayflowerexample/protected/library/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /usr/share/nginx/www/mayflowerexample/public/index.php(14): CApplication->run()
+#3 {main} REQUEST_URI=/bootstrap-responsive.css
+2012/02/16 10:59:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bootstrap-responsive.css".' in /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php(135): CWebApplication->runController('bootstrap-respo...')
+#1 /usr/share/nginx/www/mayflowerexample/protected/library/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /usr/share/nginx/www/mayflowerexample/public/index.php(14): CApplication->run()
+#3 {main} REQUEST_URI=/bootstrap-responsive.css
+2012/02/16 11:00:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bootstrap-responsive.css".' in /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php(135): CWebApplication->runController('bootstrap-respo...')
+#1 /usr/share/nginx/www/mayflowerexample/protected/library/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /usr/share/nginx/www/mayflowerexample/public/index.php(14): CApplication->run()
+#3 {main} REQUEST_URI=/bootstrap-responsive.css
+2012/02/16 11:01:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bootstrap-responsive.css".' in /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php(135): CWebApplication->runController('bootstrap-respo...')
+#1 /usr/share/nginx/www/mayflowerexample/protected/library/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /usr/share/nginx/www/mayflowerexample/public/index.php(14): CApplication->run()
+#3 {main} REQUEST_URI=/bootstrap-responsive.css
+2012/02/16 11:01:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bootstrap-responsive.css".' in /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php(135): CWebApplication->runController('bootstrap-respo...')
+#1 /usr/share/nginx/www/mayflowerexample/protected/library/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /usr/share/nginx/www/mayflowerexample/public/index.php(14): CApplication->run()
+#3 {main} REQUEST_URI=/bootstrap-responsive.css
+2012/02/16 11:02:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bootstrap-responsive.css".' in /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php(135): CWebApplication->runController('bootstrap-respo...')
+#1 /usr/share/nginx/www/mayflowerexample/protected/library/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /usr/share/nginx/www/mayflowerexample/public/index.php(14): CApplication->run()
+#3 {main} REQUEST_URI=/bootstrap-responsive.css
+2012/02/16 11:02:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bootstrap-responsive.css".' in /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php(135): CWebApplication->runController('bootstrap-respo...')
+#1 /usr/share/nginx/www/mayflowerexample/protected/library/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /usr/share/nginx/www/mayflowerexample/public/index.php(14): CApplication->run()
+#3 {main} REQUEST_URI=/bootstrap-responsive.css
+2012/02/16 11:02:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bootstrap-responsive.css".' in /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php(135): CWebApplication->runController('bootstrap-respo...')
+#1 /usr/share/nginx/www/mayflowerexample/protected/library/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /usr/share/nginx/www/mayflowerexample/public/index.php(14): CApplication->run()
+#3 {main} REQUEST_URI=/bootstrap-responsive.css
+2012/02/16 11:03:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bootstrap-responsive.css".' in /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php(135): CWebApplication->runController('bootstrap-respo...')
+#1 /usr/share/nginx/www/mayflowerexample/protected/library/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /usr/share/nginx/www/mayflowerexample/public/index.php(14): CApplication->run()
+#3 {main} REQUEST_URI=/bootstrap-responsive.css
+2012/02/16 11:03:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bootstrap-responsive.css".' in /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /usr/share/nginx/www/mayflowerexample/protected/library/yii/web/CWebApplication.php(135): CWebApplication->runController('bootstrap-respo...')
+#1 /usr/share/nginx/www/mayflowerexample/protected/library/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /usr/share/nginx/www/mayflowerexample/public/index.php(14): CApplication->run()
+#3 {main} REQUEST_URI=/bootstrap-responsive.css

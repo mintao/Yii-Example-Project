@@ -15,7 +15,29 @@ class SiteController extends Controller
     // Index
     public function actionIndex()
     {
-        $this->render('index');
+        $post  = Yii::app()->getRequest()->getPost('Post');
+        $posts = Post::model()->findAll();
+        $model = new Post;
+
+        if ($post) {
+            $model->attributes = $post;
+            if ($model->save()) {
+                Yii::app()->user->setFlash(
+                    'success',
+                    'Successfully created blog entry'
+                );
+                // Prevent re-submitting
+                $this->refresh();
+            }
+        }
+
+        $this->render(
+            'index',
+            array(
+                'posts' => $posts,
+                'model' => $model,
+            )
+        );
     }
 
     // Contact request
