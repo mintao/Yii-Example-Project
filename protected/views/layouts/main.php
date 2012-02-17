@@ -19,7 +19,7 @@ Yii::app()->clientScript
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <base href="<?php echo Yii::app()->request->hostInfo ?>/">
+  <base href="<?php echo Yii::app()->request->hostInfo . Yii::app()->baseUrl ?>/">
     <meta charset="utf-8">
     <title><?php echo CHtml::encode(Yii::app()->name) ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
