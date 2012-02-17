@@ -26,14 +26,14 @@ $this->widget(
                 'url' => array('site/index'),
                 'label' => 'Home',
             ),
-            array(
-                'url' => array('site/contact'),
-                'label' => 'Contact',
-            ),
-            array(
-                'url' => array('site/page', 'view' => 'about'),
-                'label' => 'About',
-            ),
+            //array(
+                //'url' => array('site/contact'),
+                //'label' => 'Contact',
+            //),
+            //array(
+                //'url' => array('site/page', 'view' => 'about'),
+                //'label' => 'About',
+            //),
         ),
     )
 )

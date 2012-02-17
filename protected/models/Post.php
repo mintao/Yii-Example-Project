@@ -50,10 +50,9 @@ class Post extends CActiveRecord
 	 */
 	public function relations()
 	{
-		// NOTE: you may need to adjust the relation name and the related
-		// class name for the relations automatically generated below.
 		return array(
             'comments' => array(self::HAS_MANY, 'Comment', 'post_id'),
+            'commentCount'=>array(self::STAT, 'Comment', 'post_id'),
 		);
 	}
 
@@ -75,9 +74,6 @@ class Post extends CActiveRecord
 	 */
 	public function search()
 	{
-		// Warning: Please modify the following code to remove attributes that
-		// should not be searched.
-
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('id',$this->id,true);

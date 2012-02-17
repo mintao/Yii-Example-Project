@@ -12,7 +12,6 @@ return array(
 	// autoloading model and component classes
 	'import'=>array(
 		'application.models.*',
-		'application.forms.*',
 		'application.components.*',
 	),
 
@@ -37,18 +36,22 @@ return array(
 
 		'urlManager'=>array(
 			'urlFormat'=>'path',
-            'showScriptName' => false,
+            //'showScriptName' => false,
 			'rules'=>array(
                 '' => 'site/index',
                 'static/<view:\w+>' => 'site/page',
-                '<a:log(in|out)>' => 'site/<a>',
-                'contact' => 'site/contact',
+                'post:<id\w+>' => 'site/show',
 			),
 		),
 
 		'db'=>array(
 			'connectionString' => 'sqlite:'.__DIR__.'/../data/mayflowertest.db',
+            'schemaCachingDuration' => 120,
 		),
+
+        'cache'=>array(
+            'class'=>'system.caching.CXCache',
+        ),
 
 		'log'=>array(
 			'class'=>'CLogRouter',
@@ -57,9 +60,9 @@ return array(
 					'class'=>'CFileLogRoute',
 					'levels'=>'error, warning',
 				),
-				//array(
-					//'class'=>'CWebLogRoute',
-				//),
+                //array(
+                    //'class'=>'CWebLogRoute',
+                //),
 			),
 		),
 	),

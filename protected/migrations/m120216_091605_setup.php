@@ -11,7 +11,7 @@ class m120216_091605_setup extends CDbMigration
                 'id'         => 'pk',
                 'title'      => 'string',
                 'body'       => 'text',
-                'created_at' => 'date',
+                'created_at' => 'timestamp',
             )
         );
 
@@ -24,7 +24,7 @@ class m120216_091605_setup extends CDbMigration
                 'name'       => 'string',
                 'email'      => 'string',
                 'comment'    => 'text',
-                'created_at' => 'date',
+                'created_at' => 'timestamp',
             )
         );
 	}

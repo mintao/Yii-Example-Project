@@ -4,10 +4,10 @@
 
 <p>This is a blog demonstration</p>
 
-<h3>Previous posts</h3>
+<h3>Previous posts (<?php echo $postCount ?>)</h3>
 <?php
 foreach ($posts as $post) {
-    $this->renderPartial('_post', array('post' => $post));
+    $this->renderPartial('_teaser', array('post' => $post));
 }
 ?>
 

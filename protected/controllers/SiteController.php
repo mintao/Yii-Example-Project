@@ -2,31 +2,34 @@
 class SiteController extends Controller
 {
 
-    public function actions()
-    {
-        return array(
-            // Static pages
-            'page'=>array(
-                'class' => 'CViewAction',
-            ),
-        );
-    }
-
-    // Index
+    // Index => Show recent posts
     public function actionIndex()
     {
+        // Blank new post model
         $model = new Post;
-        $post  = Yii::app()->getRequest()->getPost('Post');
+
+        // Http post of a new blog post
+        $post = Yii::app()->getRequest()->getPost('Post');
+
+        // Get recent 5 posts
         $posts = Post::model()->with('comments')->recent()->findAll();
 
+        // Count for all posts
+        $postCount = Post::model()->count();
+
+        // User has submitted the "new blog post" form
         if ($post) {
+            // Assign all HTTP post attributes to model. Don't worry!
             $model->attributes = $post;
+            // Model will only store the attributes defined in the
+            // validation rules.
+            // Save automatically validates per default.
             if ($model->save()) {
                 Yii::app()->user->setFlash(
                     'success',
                     'Successfully created blog entry'
                 );
-                // Prevent re-submitting
+                // Prevent user from re-submitting
                 $this->refresh();
             }
         }
@@ -34,29 +37,26 @@ class SiteController extends Controller
         $this->render(
             'index',
             array(
-                'posts' => $posts,
-                'model' => $model,
+                'postCount' => $postCount,
+                'posts'     => $posts,
+                'model'     => $model,
             )
         );
     }
 
-    // Contact request
-    public function actionContact()
+    // Show a blog post
+    public function actionShow($id)
     {
-        $form = new ContactForm;
-        $post = Yii::app()->getRequest()->getPost('ContactForm');
+        $post = Post::model()->with('comments', 'commentCount')->findByPk($id);
 
-        if ($post) {
-            $form->attributes = $post;
-            if ($form->validate()) {
-                Yii::app()->user->setFlash(
-                    'success',
-                    'We will send out an email ... NOT'
-                );
-            }
+        if (! $post instanceof Post) {
+            throw new CHttpException(
+                'Post could not be found'
+            );
         }
 
-        $this->render('contact', array('model' => $form));
+        $this->render('show', array('post' => $post));
     }
+
 }
 

@@ -1,5 +1,8 @@
 <h4>Comments</h4>
 
+<?php if (0 === count($comments)) : ?>
+    <p>No recent comments. Be the first one!</p>
+<?php else : ?>
 <ol>
 <?php foreach ($comments as $comment) : ?>
 
@@ -11,8 +14,6 @@
     <?php echo CHtml::encode($comment->comment) ?>
 </li>
 
-
-
-
 <?php endforeach ?>
 </ol>
+<?php endif ?>

@@ -21,7 +21,7 @@ Yii::app()->clientScript
   <head>
   <base href="<?php echo Yii::app()->request->hostInfo . Yii::app()->baseUrl ?>/">
     <meta charset="utf-8">
-    <title><?php echo CHtml::encode(Yii::app()->name) ?></title>
+    <title><?php echo CHtml::encode($this->pageTitle . ' | ' . Yii::app()->name) ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
