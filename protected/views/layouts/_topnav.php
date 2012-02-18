@@ -13,31 +13,30 @@
           array('class' => 'brand')
       ) ?>
       <div class="nav-collapse">
-
-<?php
-$this->widget(
-    'zii.widgets.CMenu',
-    array(
-        'htmlOptions' => array(
-            'class' => 'nav'
-        ),
-        'items' => array(
+        <?php
+        $this->widget(
+            'zii.widgets.CMenu',
             array(
-                'url' => array('site/index'),
-                'label' => 'Home',
-            ),
-            //array(
-                //'url' => array('site/contact'),
-                //'label' => 'Contact',
-            //),
-            //array(
-                //'url' => array('site/page', 'view' => 'about'),
-                //'label' => 'About',
-            //),
-        ),
-    )
-)
-?>
+                'htmlOptions' => array(
+                    'class' => 'nav'
+                ),
+                'items' => array(
+                    array(
+                        'url' => array('site/index'),
+                        'label' => Yii::t('menu', 'Home'),
+                    ),
+                    //array(
+                        //'url' => array('site/contact'),
+                        //'label' => Yii::t('menu', 'Contact'),
+                    //),
+                    //array(
+                        //'url' => array('site/page', 'view' => 'about'),
+                        //'label' => Yii::t('menu', 'About'),
+                    //),
+                ),
+            )
+        )
+        ?>
       </div><!--/.nav-collapse -->
     </div>
   </div>
