@@ -1,6 +1,6 @@
 [submodule "build/bootstrap"]
 	path = build/bootstrap
 	url = git://github.com/twitter/bootstrap.git
-[submodule "protected/library/yii"]
-	path = protected/library/yii
-	url = git://github.com/mintao/yii-mini.git
+[submodule "protected/library/yii-full"]
+	path = protected/library/yii-full
+	url = git@github.com:mintao-gmbh-und-co-kg/yii.git
