@@ -10,7 +10,8 @@
     <?php echo CHtml::link(
         CHtml::encode($comment->name),
         'mailto:' . $comment->email
-    ); ?>:
+    ); ?>
+    <?php echo date('d.m.Y H:i', $comment->created_at) ?>:
     <?php echo CHtml::encode($comment->comment) ?>
 </li>
 
