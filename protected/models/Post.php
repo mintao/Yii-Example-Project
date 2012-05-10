@@ -49,8 +49,8 @@ class Post extends CActiveRecord
     public function relations()
     {
         return array(
-            'comments' => array(self::HAS_MANY, 'Comment', 'post_id'),
-            'commentCount'=>array(self::STAT, 'Comment', 'post_id'),
+            'comments'     => array(self::HAS_MANY, 'Comment', 'post_id'),
+            'commentCount' => array(self::STAT, 'Comment', 'post_id'),
         );
     }
 
@@ -74,10 +74,10 @@ class Post extends CActiveRecord
     {
         $criteria=new CDbCriteria;
 
-        $criteria->compare('id',$this->id,true);
-        $criteria->compare('title',$this->title,true);
-        $criteria->compare('body',$this->body,true);
-        $criteria->compare('created_at',$this->created_at,true);
+        $criteria->compare('id', $this->id, true);
+        $criteria->compare('title', $this->title, true);
+        $criteria->compare('body', $this->body ,true);
+        $criteria->compare('created_at', $this->created_at, true);
 
         return new CActiveDataProvider($this, array(
             'criteria'=>$criteria,
@@ -87,8 +87,8 @@ class Post extends CActiveRecord
     public function behaviors()
     {
         return array(
-            'Timestamp' => array(
-                'class' => 'application.components.TimestampBehavior',
+            'Timestamp'            => array(
+                'class'            => 'application.components.TimestampBehavior',
                 'createColumnName' => 'created_at',
             )
         );
@@ -110,3 +110,4 @@ class Post extends CActiveRecord
         );
     }
 }
+
