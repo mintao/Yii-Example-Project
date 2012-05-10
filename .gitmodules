@@ -3,4 +3,4 @@
 	url = git://github.com/twitter/bootstrap.git
 [submodule "protected/library/yii-full"]
 	path = protected/library/yii-full
-	url = git@github.com:mintao-gmbh-und-co-kg/yii.git
+	url = git://github.com/yiisoft/yii.git
